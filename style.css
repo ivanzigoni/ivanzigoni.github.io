@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-color: #e9edc9;
+    background-image: linear-gradient(#e9edc9, #faedcd);
     color: #03071e;
     font-weight: 500;
     width: 650px;
