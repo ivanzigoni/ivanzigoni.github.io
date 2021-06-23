@@ -8,6 +8,8 @@ body {
     margin: 5px auto;
     border: 1px solid #ffcdb2;
     border-radius: 50px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 a:link,a:visited {
