@@ -1,54 +1,82 @@
 body {
-    text-align: center;
-    background-color: #e9edc9;
-    background-image: linear-gradient(#e9edc9, #faedcd);
-    color: #03071e;
-    font-weight: 500;
-    width: 650px;
-    margin: 5px auto;
-    border: 1px solid #ffcdb2;
-    border-radius: 50px;
-    margin-right: auto;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
+  font-family: monospace;
 }
 
-a:link,a:visited {
-  color: #118ab2;
-  text-decoration: none;
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  width: 300px;
+  height: 900px;
+  background-color: aliceblue;
 }
 
-a:hover,a:active {
-  color: #8d99ae;
-  text-decoration: none;
+main {
+  border: 1px solid black;
+  width: 600px;
+  height: 900px;
+  background-color: antiquewhite;
 }
 
-h1 {
-  font-family: 'Roboto', sans-serif;
-  
+#profile-picture {
+  border-radius: 50%;
+  height: 150px;
+  width: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 li {
-  list-style-type: none;
-
+  margin-bottom: 30px;
+  margin-left: -5px;
 }
-.resizeDefault {
-  width: 15px;
-  height: auto;
 
+.aside-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-profile {
+  height: 220px;
+  justify-content: space-evenly;
 }
 
 .icon {
-  width: 40px;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
+  width: 30px;
 }
 
-.name {
-  margin-bottom: 10px;
-  margin-top: 3px;
+#section-stack-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 279px;
+  padding: 20px;
 }
 
-#whois {
-  margin-top: 1px;
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#section-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 580px;
+  overflow: auto;
 }

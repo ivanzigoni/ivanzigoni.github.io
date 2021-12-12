@@ -1,67 +1,95 @@
 <!DOCTYPE html>
-<!-- 
-Uma foto atual sua, acompanhada de um texto alternativo, que deve ser a descrição da foto que você está usando;
-Um link interno para a sua foto;
--->
-
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="style.css">
-    <title>Ivan's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1 class="name">Ivan Zigoni Pires</h1>
-    <nav>
-      <a href="https://github.com/ivanzigoni" class="githubicon">
-        <img src="img/github.png" alt="GitHub Page" class="icon">
-      </a>
-      <p class="links">
-        <li><a href="#whois">Who's Ivan?</a></li>
-        <li><a href="#howdoes">At work</a></li>
-        <li><a href="#skills">Skills</a></li>
-      </p>
-    </nav>
-  </header>
-  <section class="content">
-    <article class="whoisivan">
-      <h2 id="whois">And you may ask... Who is Ivan?</h2>
+  <aside>
+    <section id="section-profile" class="aside-section">
+      <img src="images/ivan.png" alt="my profile picture" id="profile-picture">
+      <span>Belo Horizonte, MG - Brasil!</span>
+    </section>
+    <section id="section-contact" class="aside-section">
+      <h4>contato</h4>
       <ul>
-        <li>Ivan was born in <span style="color:#f48c06;">Brazil</span>, more specifically in <span style="color:#f48c06;">Belo Horizonte</span>, where still resides;</li>
-        <li>He's been around since 1996;</li>
-        <li>He's currently studying web development skills at Trybe;</li>
-        <li>And he is also improving <strong>drastically</strong> by the day!;</li>
-        <li>(and he can guarantee that he's enjoying the process);</li>
-        <li>(<em>is a great cook</em>);</li>
+        <li>
+          <span>linkedin</span>
+          <a href="https://www.linkedin.com/in/ivan-zigoni/" target="_blank">/ivanzigoni</a>
+        </li>
+        <li>
+          <span>github</span>
+          <a href="https://github.com/ivanzigoni" target="_blank">/ivanzigoni</a>
+        </li>
+        <li><a href="mailto: ivanzigonipires.11@gmail.com">ivanzigonipires.11@gmail.com</a></li>
       </ul>
-    </article>
-    <article class="howdoesivan">
-      <h2 id="howdoes">How does Ivan deals with work?</h2>
-      <ol>
-        <li>Is able to visualize problems in a bigger picture;</li>
-        <li>Can handle crisis situations with the patience and attention required;</li>
-        <li>Skilled  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png" class="resizeDefault">  searcher;</li>
-        <li>Enjoys learning and using new tools;</li>
-        <li>Has the importance of an organized work space internalized like it's a mantra;</li>
-      </ol>
-    </article>
-    <article class="skillsivan">
-      <h2 id="skills">Ivan's hard skills:</h2>
-        <img src="/img/html.png" class="icon">
-        <img src="/img/css.png" class="icon">
-        <img src="/img/javascript.png" class="icon">
-        <img src="/img/git.png" class="icon">
-    </article>
-  </section>
-  <footer>
-    <p>A <a href="https://monkeybuzz.com.br/" target="_blank" title="Monkeybuzz">link</a> to a blog I very much like to read! <em>on my spare time</em></em></a>
-  </footer>  
+    </section>
+    <section id="section-education" class="aside-section">
+      <h4>formação</h4>
+      <ul>
+        <li><a href="https://betrybe.com/" target="_blank">TRYBE</a> - dev web fullstack</li>
+        <li><a href="https://www.linkedin.com/school/iesb/" target="_blank">IESB</a> - gastronomia</li>
+      </ul>
+    </section>
+    <section id="section-work-status" class="aside-section">
+      <h4>por onde anda ivan?</h4>
+      <span>trybe - summer job de currículo!</span>
+    </section>
+  </aside>
+  <main>
+    <section id="section-stack-list">
+      <h2>stack list</h2>
+      <h4>me sinto confortável trabalhando com e aprendendo</h4>
+      <section class="stack-section">
+        <img src="images/icons/html-5.png" class="icon" alt="tech-icon">
+        <img src="images/icons/css.png" class="icon" alt="tech-icon">
+        <img src="images/icons/javascript.png" class="icon" alt="tech-icon">
+        <img src="images/icons/react.png" class="icon" alt="tech-icon">
+      </section>
+      <h4>e possuo noções básicas e alguma prática com</h4>
+      <section class="stack-section">
+        <img src="images/icons/redux.png" class="icon" alt="tech-icon">
+        <img src="images/icons/jest.png" class="icon" alt="tech-icon">
+        <img src="images/icons/docker.png" class="icon" alt="tech-icon">
+        <img src="images/icons/linux.png" class="icon" alt="tech-icon">
+        <img src="images/icons/mysql.png" class="icon" alt="tech-icon">
+      </section>
+      <p><strong>inglês avançado, comunicativo e gente boa!</strong></p>
+    </section>
+    <section id="section-projects">
+      <h2>projetos</h2>
+      <article class="project-card">
+        <h3>APP DE RECEITAS</h3>
+        <img src="images/icons/cooking.png" class="icon" alt="cooking-icon"/>
+        <p>projeto final do módulo de frontend da trybe! aqui desenvolvemos uma interface para que a pessoa usuária possa navegar em duas apis públicas que disponibilizam receitas de comidas e drinks! utilizamos react com context api, react router, css, html e o cérebro!</p>
+        <a href="blank" target="_blank">acesse o app!</a>
+        <a href="blank" target="_blank">repositório</a>
+      </article>
+      <article class="project-card">
+        <h3>STARWARS PLANET TABLE</h3>
+        <img src="images/icons/darth-vader.png" class="icon" alt="starwars-icon"/>
+        <p>resolvi destacar esse projeto porque foi um dos mais divertidos durante o módulo de frontend da trybe! projeto para que as pessoas estudantes pudessem se familiarizar e aprender a usar a context api. além disso, um grande desafio de elaborar métodos de filtragem de elementos em uma tabela e lidar com requisições a apis pública!</p>
+        <a href="blank" target="_blank">explore os planetas!</a>
+        <a href="blank" target="_blank">repositório</a>
+      </article>
+      <article class="project-card">
+        <h3>FAKE SNAKE</h3>
+        <img src="images/icons/snake.png" class="icon" alt="snake-icon"/>
+        <p>até aqui só havia feito projetos usando class components. resolvi desenvolver um joguinho da cobrinha simplificado (daí o nome fake snake) para testar as diferenças de sintaxe entre componentes de classe e componentes funcionais em react.</p>
+        <a href="https://ivanzigoni.github.io/fakesnake/" target="_blank">jogue fake snake!</a>
+        <a href="https://github.com/ivanzigoni/fakesnake" target="_blank">repositório</a>
+      </article>
+      <article class="project-card">
+        <h3>TIMER</h3>
+        <img src="images/icons/clock.png" class="icon" alt="clock-icon"/>
+        <p>foi lançado um desafio: construir um timer para a professora usar durante o intervalo! feito em html, css e javascript com react usando class components!</p>
+        <a href="https://ivanzigoni.github.io/timer/" target="_blank">acesse o timer!</a>
+        <a href="https://github.com/ivanzigoni/timer">repositório</a>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
