@@ -30,6 +30,11 @@ main {
   border-radius: 50%;
   height: 150px;
   width: auto;
+  margin-bottom: 25px;
+}
+
+em {
+  margin-bottom: 10px;
 }
 
 ul {
