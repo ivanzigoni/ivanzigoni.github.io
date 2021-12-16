@@ -1,72 +1,60 @@
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 900px;
-  font-family: monospace;
+  display: grid;
+  font-family: 'Roboto Mono', monospace;
+  background-image: linear-gradient(#fcffe3, #ffffef, #ffffef, #ffffef, #fdffed);
 }
 
-aside {
+/* <header> */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 1%;
+  height: 100vh;
+}
+
+.header-inner-containers {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  width: 300px;
-  height: 900px;
-  background-color: aliceblue;
+  width: 100%;
 }
+
+.profile-picture {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 1%;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  min-width: 150px;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* </header> */
+
+/* <main> */
 
 main {
-  border: 1px solid black;
-  width: 600px;
-  height: 900px;
-  background-color: antiquewhite;
-}
-
-#profile-picture {
-  border-radius: 50%;
-  height: 150px;
-  width: auto;
-  margin-bottom: 25px;
-}
-
-em {
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  margin-bottom: 30px;
-  margin-left: -5px;
-}
-
-.aside-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-#section-profile {
-  height: 220px;
-  justify-content: space-evenly;
-}
-
-.icon {
-  width: 30px;
-}
-
-#section-stack-list {
+.section-stack-list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 279px;
   padding: 20px;
 }
 
@@ -75,13 +63,40 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 70%;
   padding: 10px;
 }
 
-#section-projects {
+.section-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 580px;
-  overflow: auto;
+}
+
+/* </main> */
+
+.icon {
+  width: 30px;
+}
+
+em {
+  margin-bottom: 10px;
+}
+
+address {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 30%;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+h4 {
+  font-style: normal;
 }
