@@ -62,6 +62,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: justify;
   align-items: center;
   width: 70%;
   padding: 10px;
